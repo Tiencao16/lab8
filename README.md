@@ -42,11 +42,11 @@ Kịch bản được tinh chỉnh để mô phỏng lượng lượt truy cập
 - **Ramp-up Period (Seconds):** `10`
 - **Loop Count:** `5`
 
-> 💡 **Khối lượng dự kiến:** 10 người dùng × 5 vòng lặp = **50 HTTP Requests**. Kịch bản tiến hành rải đều 10 người dùng khởi động trong vòng 10 giây, ép hệ thống xử lý các lượt GET liên tục nhằm đo lường tốc độ hiển thị dữ liệu bài viết (Posts).
+> **Khối lượng dự kiến:** 10 người dùng × 5 vòng lặp = **50 HTTP Requests**. Kịch bản tiến hành rải đều 10 người dùng khởi động trong vòng 10 giây, ép hệ thống xử lý các lượt GET liên tục nhằm đo lường tốc độ hiển thị dữ liệu bài viết (Posts).
 
 ---
 
-## ⚙️ 4. Quy trình Cấu hình JMeter
+## 4. Quy trình Cấu hình JMeter
 
 ### 4.1. Chuẩn bị nền tảng Java
 Do JMeter hoạt động trên JVM, cần kiểm tra phiên bản Java máy đang tích hợp qua Terminal:
