@@ -1,10 +1,10 @@
-# 📊 Báo cáo Kiểm thử Hiệu năng API bằng Apache JMeter
+# Báo cáo Kiểm thử Hiệu năng API bằng Apache JMeter
 
 > **Giới thiệu:** Bài báo cáo này trình bày chi tiết quy trình áp dụng công cụ **Apache JMeter** để đánh giá hiệu năng và khả năng chịu tải của một API công khai. Hệ thống đích được thử nghiệm là **JSONPlaceholder** (`https://jsonplaceholder.typicode.com/posts`) – một nền tảng chuyên cung cấp Fake API cho mục đích học tập và kiểm thử.
 
 ---
 
-## 🎯 1. Mục tiêu Thực hành
+## 1. Mục tiêu Thực hành
 
 Quá trình thực hành được thực hiện nhằm đạt được các mục tiêu cốt lõi sau:
 - Nắm bắt nguyên lý hoạt động của Apache JMeter.
@@ -17,7 +17,7 @@ Quá trình thực hành được thực hiện nhằm đạt được các mụ
 
 ---
 
-## 🛠️ 2. Môi trường & Hệ thống
+## 2. Môi trường & Hệ thống
 
 | Tiêu chí | Thông số chi tiết |
 | :--- | :--- |
@@ -29,7 +29,7 @@ Quá trình thực hành được thực hiện nhằm đạt được các mụ
 
 ---
 
-## 🚀 3. Thiết kế Kịch bản Tải (Test Scenario)
+## 3. Thiết kế Kịch bản Tải (Test Scenario)
 
 Kịch bản được tinh chỉnh để mô phỏng lượng lượt truy cập đồng thời vào hệ thống:
 
@@ -84,7 +84,7 @@ Thu thập và trình bày thông tin output:
 
 ---
 
-## 📈 5. Phân tích Số liệu Kiểm thử
+## 5. Phân tích Số liệu Kiểm thử
 
 ### 5.1. Giám sát chi tiết (View Results Tree)
 Tất cả requests đều báo cờ xanh (`Response code: 200`, `Error Count: 0`). Server tiếp nhận và trả đủ dữ liệu JSON.
@@ -106,7 +106,7 @@ Báo cáo chỉ ra tốc độ và lưu lượng truyền tải:
 
 ---
 
-## 💻 6. Thực thi lại Bài Test (Reproduce)
+## 6. Thực thi lại Bài Test (Reproduce)
 
 Có thể chạy trực tiếp file mô phỏng với giao diện (GUI):
 ```text
@@ -120,6 +120,6 @@ jmeter -n -t test-plan/jsonplaceholder-test-plan.jmx -l results/result.jtl
 
 ---
 
-## 📌 7. Tổng kết
+## 7. Tổng kết
 
 Qua bài thực hành, toàn bộ quy trình Load/Performance Testing đã được thực hiện bằng Apache JMeter — Từ việc Setup API đích, lập Test Plan, Assertions, tới xuất báo cáo (Reporting). Nhờ kết quả thu được, chúng ta có thể đánh giá tính sẵn sàng của endpoint `/posts` bên phía target server, xác nhận hệ thống duy trì được tính liền mạch ở tải trọng được giao.
